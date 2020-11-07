@@ -3,13 +3,13 @@ function func2(){
 
     var name = document.getElementById("Name").value;
     var date = document.getElementById("date").value;
-    let amount = document.getElementById("amount").value;
+    let amount = parseInt(document.getElementById("amount").value);
 
-    if(!name||!date||!amount){
+    if(!name||!date||!amount||amount===NaN){
         alert("Please Enter the relevent info");
     }
     else{
-        sum = sum + parseInt(amount);
+        sum = sum + amount;
         var table = document.getElementById("tableBody");
         var node1 = document.createElement("button");
         node1.textContent = "X";
