@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link type="text/css" rel="stylesheet" href="expenseCalculator.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Expense Tracker</h1>
+        <h2>Add a New Item:</h2>
+    </div>
+    <div class="name">
+        <label for="cusName">Name:</label>
+        <input type="text" value="" id="Name" required placeholder="where was the expense made?">
+    </div>
+    <div class="DateAndAmount">
+        <label for="cusName">Date:</label>
+        <input type="date" value="" id="date">
+        <label for="cusName">Amount:</label>
+        <input type="text" value="" id="amount" required>
+    </div>
+    <div class="button">
+        <button onclick="func2()">Add Expense</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total:</td>
+                <td colspan="2" id="total">$ 0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script type="text/javascript" src="expenseCalculator.js"></script>
+</body>
+</html>
