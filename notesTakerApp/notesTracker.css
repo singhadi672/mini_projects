@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.header h2{
+
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}
+
+.section{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section p{
+    padding-left: 16%;
+    position: absolute;
+}
+
+textarea{
+
+    width: 60%;
+    border: 1px solid rgb(224, 218, 218);
+}
+
+.addnote{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.addnote button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid rgb(190, 180, 180);
+    border-radius: 5px;
+    
+}
+
+.addnote button:hover{
+    color: white;
+    background: green;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.box{
+    width: 32%;
+    border: 1px solid rgb(190, 180, 180);
+    border-radius: 10px;
+    justify-content: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    min-height: 170px;
+}
+
+.box button{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(54, 184, 245);
+    border: 1px solid rgb(190, 180, 180);
+    border-radius: 5px;
+    color: white;
+}
